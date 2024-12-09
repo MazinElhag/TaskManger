@@ -186,4 +186,22 @@ public class TaskManager {
     public void showCanceledTasks() {
         showTasksByStatus("canceled");
     }
+    public void latestTask(){
+
+        if(tasks.isEmpty()){
+            System.out.println("--------------------------------------------------");
+            System.out.println("No tasks available.");
+            System.out.println("--------------------------------------------------");
+        }
+        else {
+            Iterator<Task> iterator = tasks.iterator();
+            Task latestTask = null;
+            while (iterator.hasNext()){
+                latestTask = iterator.next();
+            }
+            System.out.println("--------------------------------------------------");
+            System.out.println("latest task:\n" + latestTask);
+            System.out.println("--------------------------------------------------");
+
+        }
 }

@@ -40,7 +40,7 @@ class Main {
                     taskManager.showAllTasks();
                     break;
                 case 6:
-
+                    taskManager.latestTask();
                     break;
                 case 7:
                     taskManager.showDoneTasks();
